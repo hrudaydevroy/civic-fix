@@ -38,12 +38,6 @@ The main GHMC purpose of this project is to provide a quick, public-facing inter
 
 ## Screenshots
 
-![Login Page](docs/login-page.png)
-
-![Admin Dashboard](docs/admin-dashboard.png)
-
-![Report Success](docs/report-success.png)
-
 ![Login Portal](docs/screenshot-login-portal.png)
 
 ![Report Form](docs/screenshot-report-form.png)
