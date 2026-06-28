@@ -44,19 +44,66 @@ The main GHMC purpose of this project is to provide a quick, public-facing inter
 
 ![Report Success](docs/report-success.png)
 
-## Run the project
+![Login Portal](docs/screenshot-login-portal.png)
+
+![Report Form](docs/screenshot-report-form.png)
+
+## Recommended course track
+
+This project is best matched with a Java web development course or bootcamp that covers:
+
+- Java core and object-oriented programming
+- Maven build system and dependency management
+- Spring Boot application development
+- Thymeleaf templates for server-side HTML rendering
+- Web MVC patterns and form handling
+- File upload handling and multipart configuration
+- Basic web security and authentication flows
+- Testing Spring Boot applications with JUnit and Spring Boot Test
+
+A strong fit would be a course titled *"Spring Boot Full Stack Development"*, *"Java Web Applications with Spring"*, or *"Full Stack Java Developer"*.
+
+## Project flow
+
+1. Open the project root and verify the repository is clean.
+2. Build and test the application first:
 
 ```bash
 cd "d:\demo3 civic\demo3 civic\demo"
 ./mvnw.cmd test
+```
+
+3. Start the application:
+
+```bash
 ./mvnw.cmd spring-boot:run
 ```
 
-Then open:
+4. Open the browser at:
 
 ```text
 http://localhost:10000/
 ```
+
+5. Use the login page to sign in as an existing user or register a new account.
+6. From the home page, submit a civic issue report with evidence, issue type, and location.
+7. After submission, confirm the success page and review the report in the admin dashboard.
+8. Use the admin dashboard to resolve, escalate, or delete issues.
+9. View submitted issues under `My Reports` for citizen tracking.
+
+## Notes
+
+- This project currently uses in-memory data structures for reports, officers, and users.
+- For production use, integrate a database and secure authentication.
+- The current `application.properties` sets `server.port` to `10000` by default.
+
+## Project Structure
+
+- `demo/pom.xml` — Maven build and dependencies
+- `demo/src/main/java/com/civicfix/demo` — Spring Boot application and controller
+- `demo/src/main/resources/templates` — Thymeleaf templates for UI pages
+- `demo/src/main/resources/application.properties` — application configuration
+- `docs/` — generated README images
 
 ## Notes
 
